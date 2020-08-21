@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" xmlns:th="http://www.thymeleaf.org">  
+<head>
+<meta charset="ISO-8859-1">
+<title>DELETE</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="h-100">
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+			<form action="/removeUser" method="post" style="max-width: 600px">
+			  <div class="form-group">
+				  <label for="sel1">Select Roll no. to remove:</label>
+				  <select class="form-control" id="sel1" name="rollno">
+				    <option th:each="temp : ${user_list}" th:text="${temp.rollno}"></option>
+				  </select>
+			  </div>
+			  <button type="submit" class="btn btn-danger">DELETE</button>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
