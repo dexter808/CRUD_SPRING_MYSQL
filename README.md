@@ -1,6 +1,6 @@
 # Student Management System
 **Built on Spring MVC framework, this project does 4 (C.R.U.D.) operation on MySql database present locally on the server.
-It uses tomcat embeded server, JPA and Hibernate for SQL related operations, and Thymeleaf for managing views.I have used Bootstrap for designing the pages.**
+It uses tomcat embeded server, JPA and Hibernate for SQL related operations, and Thymeleaf for managing views.**
 
 # How to setup
 1. Install and configure MySql on your machine and edit the application.properties in the resource folder accordingly before starting the spring boot app.
